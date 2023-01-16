@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CONUFL001-SMD-T
+D RF Connectors / Coaxial Connectors T&R U.FL Straight Surface Mount Jack
+F https://linxtechnologies.com/wp/product/mhf-rf-connectors/
+$ENDCMP
+#
+$CMP LNA
+D BGU8009
+$ENDCMP
+#
+$CMP SAW_FILTER
+D B39162B9415K610
+$ENDCMP
+#
+$CMP SR4G008
+D Antennas 1559-1609MHz Avg. Eff >75% Linear
+F https://componentsearchengine.com/Datasheets/1/SR4G008.pdf
+$ENDCMP
+#
+#End Doc Library

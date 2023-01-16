@@ -1,0 +1,436 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C67
+U 1 1 606C6140
+P 4400 3000
+F 0 "C67" H 4515 3046 50  0000 L CNN
+F 1 "100n" H 4515 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 2850 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+F 4 "GCM155R71H104KE02D" H 4400 3000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 606D5A62
+P 6350 2900
+F 0 "R57" H 6420 2946 50  0000 L CNN
+F 1 "3.24k" H 6420 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2900 50  0001 C CNN
+F 3 "~" H 6350 2900 50  0001 C CNN
+F 4 "RG1005N-3161-W-T1" H 6350 2900 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2600 4400 2850
+Wire Wire Line
+	4400 3350 4400 3150
+$Comp
+L Device:R_Pack04_SIP RN1
+U 1 1 606E08A8
+P 5050 3650
+F 0 "RN1" V 5775 3631 50  0000 C CNN
+F 1 "CAT16-2701F4LF" V 5684 3631 50  0000 C CNN
+F 2 "Resistor_SMD:R_Cat16-4" V 5725 3650 50  0001 C CNN
+F 3 "" H 5050 3650 50  0001 C CNN
+F 4 "CAT16-2701F4LF" H 5050 3650 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5050 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C68
+U 1 1 606F79E4
+P 7300 3400
+F 0 "C68" H 7050 3450 50  0000 L CNN
+F 1 "100n" H 7000 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7338 3250 50  0001 C CNN
+F 3 "~" H 7300 3400 50  0001 C CNN
+F 4 "GCM155R71H104KE02D" H 7300 3400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C69
+U 1 1 606F8586
+P 7300 3000
+F 0 "C69" H 7415 3046 50  0000 L CNN
+F 1 "10u" H 7415 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7338 2850 50  0001 C CNN
+F 3 "~" H 7300 3000 50  0001 C CNN
+F 4 "TMK212BBJ106MG-T" H 7300 3000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C70
+U 1 1 606F8C1B
+P 7300 3800
+F 0 "C70" H 7415 3846 50  0000 L CNN
+F 1 "10u" H 7415 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7338 3650 50  0001 C CNN
+F 3 "~" H 7300 3800 50  0001 C CNN
+F 4 "TMK212BBJ106MG-T" H 7300 3800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7300 3800
+	1    0    0    -1  
+$EndComp
+Text HLabel 1000 1150 0    50   Input ~ 0
+SCL
+Text HLabel 1000 1250 0    50   Input ~ 0
+SDA
+Text Label 1550 850  2    50   ~ 0
+AVC
+Wire Wire Line
+	1000 1150 1550 1150
+Wire Wire Line
+	1000 1250 1550 1250
+Wire Wire Line
+	8050 2650 8050 2450
+Wire Wire Line
+	8050 2450 7800 2450
+Connection ~ 8050 2450
+Text Label 8050 2150 3    50   ~ 0
+AVC
+Wire Wire Line
+	8050 2150 8050 2450
+Wire Wire Line
+	7500 2450 7300 2450
+Wire Wire Line
+	7300 2450 7300 2750
+Wire Wire Line
+	7300 2750 7050 2750
+Wire Wire Line
+	7050 2750 7050 2800
+Wire Wire Line
+	7300 3650 7300 3600
+Wire Wire Line
+	7450 3450 7500 3450
+Wire Wire Line
+	7450 3350 7500 3350
+Wire Wire Line
+	7300 3150 7300 3200
+Wire Wire Line
+	7300 2850 7300 2750
+Connection ~ 7300 2750
+Wire Wire Line
+	8600 3300 9150 3300
+Text Label 9150 3300 2    50   ~ 0
+SCL
+Wire Wire Line
+	8600 3400 9150 3400
+Text Label 9150 3400 2    50   ~ 0
+SDA
+Text Label 1550 1150 2    50   ~ 0
+SCL
+Text Label 1550 1250 2    50   ~ 0
+SDA
+Wire Wire Line
+	3400 3400 3400 3350
+Connection ~ 3400 3350
+Wire Wire Line
+	1000 1750 1550 1750
+Text Label 2300 2700 0    50   ~ 0
+VSW
+Wire Wire Line
+	5250 3450 5600 3450
+Wire Wire Line
+	6350 2600 6350 2750
+$Comp
+L Device:C C?
+U 1 1 60E68A71
+P 7650 2450
+AR Path="/60C5E649/60E68A71" Ref="C?"  Part="1" 
+AR Path="/60CF5817/60E68A71" Ref="C71"  Part="1" 
+F 0 "C71" V 7398 2450 50  0000 C CNN
+F 1 "100n" V 7489 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7688 2300 50  0001 C CNN
+F 3 "~" H 7650 2450 50  0001 C CNN
+F 4 "GCM155R71H104KE02D" H 7650 2450 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7650 2450
+	0    -1   1    0   
+$EndComp
+NoConn ~ 8600 3550
+NoConn ~ 8600 3650
+$Comp
+L power:GNDS #PWR?
+U 1 1 60F77962
+P 3400 3400
+AR Path="/60C5E649/60F77962" Ref="#PWR?"  Part="1" 
+AR Path="/60CF5817/60F77962" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 3400 3150 50  0001 C CNN
+F 1 "GNDS" H 3400 3250 50  0000 C CNN
+F 2 "" H 3400 3400 50  0001 C CNN
+F 3 "" H 3400 3400 50  0001 C CNN
+	1    3400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 60F87654
+P 5300 4250
+AR Path="/60C5E649/60F87654" Ref="#PWR?"  Part="1" 
+AR Path="/60CF5817/60F87654" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 5300 4000 50  0001 C CNN
+F 1 "GNDS" H 5300 4100 50  0000 C CNN
+F 2 "" H 5300 4250 50  0001 C CNN
+F 3 "" H 5300 4250 50  0001 C CNN
+	1    5300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 60F88EF9
+P 7300 4250
+AR Path="/60C5E649/60F88EF9" Ref="#PWR?"  Part="1" 
+AR Path="/60CF5817/60F88EF9" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 7300 4000 50  0001 C CNN
+F 1 "GNDS" H 7300 4100 50  0000 C CNN
+F 2 "" H 7300 4250 50  0001 C CNN
+F 3 "" H 7300 4250 50  0001 C CNN
+	1    7300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3150 5300 3150
+Wire Wire Line
+	5300 3150 5300 3250
+Wire Wire Line
+	5250 4050 5300 4050
+Wire Wire Line
+	5250 3250 5300 3250
+Connection ~ 5300 3250
+Wire Wire Line
+	5300 3250 5300 3550
+Wire Wire Line
+	5300 4050 5300 4150
+Wire Wire Line
+	5300 4150 5250 4150
+Connection ~ 5300 4050
+Connection ~ 5300 4150
+Wire Wire Line
+	1550 850  1350 850 
+Wire Wire Line
+	1050 850  1000 850 
+Text Label 5900 2600 2    50   ~ 0
+NTC1
+Text Label 5900 3200 2    50   ~ 0
+NTC2
+Text Label 1550 1450 2    50   ~ 0
+NTC1
+Wire Wire Line
+	1000 1450 1550 1450
+Text HLabel 1000 1450 0    50   Input ~ 0
+NTC1
+Text HLabel 1000 1750 0    50   Input ~ 0
+TEMP_EN
+Text Label 1550 1750 2    50   ~ 0
+VSW
+Text Label 1550 1550 2    50   ~ 0
+NTC2
+Wire Wire Line
+	1000 1550 1550 1550
+Text HLabel 1000 1550 0    50   Input ~ 0
+NTC2
+Wire Wire Line
+	8600 3200 8700 3200
+Text HLabel 1000 850  0    50   Input ~ 0
+AVCC
+Wire Wire Line
+	5300 4150 5300 4250
+Wire Wire Line
+	5250 3550 5300 3550
+Connection ~ 5300 3550
+Wire Wire Line
+	5300 3550 5300 3850
+Wire Wire Line
+	5250 3850 5300 3850
+Connection ~ 5300 3850
+Wire Wire Line
+	5300 3850 5300 4050
+Wire Wire Line
+	4400 2600 6350 2600
+Wire Wire Line
+	5250 3750 5700 3750
+Wire Wire Line
+	7300 3200 7450 3200
+Connection ~ 7300 3200
+Wire Wire Line
+	7300 3200 7300 3250
+Wire Wire Line
+	7450 3200 7450 3350
+Wire Wire Line
+	7300 3200 5600 3200
+Wire Wire Line
+	5600 3200 5600 3450
+Wire Wire Line
+	7300 3600 6350 3600
+Connection ~ 7300 3600
+Wire Wire Line
+	7300 3600 7300 3550
+Wire Wire Line
+	5700 3600 5700 3750
+Wire Wire Line
+	7300 3600 7450 3600
+Wire Wire Line
+	7450 3450 7450 3600
+Wire Wire Line
+	6350 3050 6350 3600
+Connection ~ 6350 3600
+Wire Wire Line
+	6350 3600 5700 3600
+Wire Wire Line
+	7300 3950 7300 4250
+$Comp
+L power:GNDS #PWR?
+U 1 1 628D3E13
+P 8050 4250
+AR Path="/60C5E649/628D3E13" Ref="#PWR?"  Part="1" 
+AR Path="/60CF5817/628D3E13" Ref="#PWR0225"  Part="1" 
+F 0 "#PWR0225" H 8050 4000 50  0001 C CNN
+F 1 "GNDS" H 8050 4100 50  0000 C CNN
+F 2 "" H 8050 4250 50  0001 C CNN
+F 3 "" H 8050 4250 50  0001 C CNN
+	1    8050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 628D5A0B
+P 8700 4250
+AR Path="/60C5E649/628D5A0B" Ref="#PWR?"  Part="1" 
+AR Path="/60CF5817/628D5A0B" Ref="#PWR0226"  Part="1" 
+F 0 "#PWR0226" H 8700 4000 50  0001 C CNN
+F 1 "GNDS" H 8700 4100 50  0000 C CNN
+F 2 "" H 8700 4250 50  0001 C CNN
+F 3 "" H 8700 4250 50  0001 C CNN
+	1    8700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3200 8700 4250
+Wire Wire Line
+	8050 4100 8050 4250
+$Comp
+L power:GNDS #PWR?
+U 1 1 648E06C1
+P 7050 2800
+AR Path="/60C5E649/648E06C1" Ref="#PWR?"  Part="1" 
+AR Path="/60CF5817/648E06C1" Ref="#PWR0229"  Part="1" 
+F 0 "#PWR0229" H 7050 2550 50  0001 C CNN
+F 1 "GNDS" H 7050 2650 50  0000 C CNN
+F 2 "" H 7050 2800 50  0001 C CNN
+F 3 "" H 7050 2800 50  0001 C CNN
+	1    7050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts_Faria:MAX6070AAUT30+T U6
+U 1 1 6280EE15
+P 3400 2800
+F 0 "U6" H 3400 3265 50  0000 C CNN
+F 1 "MAX6070AAUT30+T" H 3400 3174 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3150 3100 50  0001 L CNN
+F 3 "" H 4550 2800 50  0001 L CNN
+F 4 "MAX6070AAUT30+T" H 4050 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3350 4400 3350
+Wire Wire Line
+	3400 3200 3400 3350
+Wire Wire Line
+	2300 2700 3000 2700
+$Comp
+L Device:C C58
+U 1 1 62823BAC
+P 2750 3100
+F 0 "C58" H 2865 3146 50  0000 L CNN
+F 1 "100n" H 2865 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2788 2950 50  0001 C CNN
+F 3 "~" H 2750 3100 50  0001 C CNN
+F 4 "GCM155R71H104KE02D" H 2750 3100 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3350 3400 3350
+Wire Wire Line
+	3800 2600 3900 2600
+Connection ~ 4400 2600
+Wire Wire Line
+	3800 2700 3900 2700
+Wire Wire Line
+	3900 2700 3900 2600
+Connection ~ 3900 2600
+Wire Wire Line
+	3900 2600 4400 2600
+Wire Wire Line
+	3000 2850 2750 2850
+Wire Wire Line
+	2750 2850 2750 2950
+Wire Wire Line
+	2750 3250 2750 3350
+Text Label 2300 2600 0    50   ~ 0
+AVC
+Wire Wire Line
+	2300 2600 3000 2600
+$Comp
+L SamacSys_Parts_Faria:ADS1114IDGSR IC?
+U 1 1 60D6A7DD
+P 8050 3400
+AR Path="/60D6A7DD" Ref="IC?"  Part="1" 
+AR Path="/60CF5817/60D6A7DD" Ref="U5"  Part="1" 
+F 0 "U5" H 8100 4150 50  0000 L CNN
+F 1 "ADS1114IDGSR" H 8100 4050 50  0000 L CNN
+F 2 "SOP50P490X110-10N" H 8250 2300 50  0001 L CNN
+F 3 "https://www.arrow.com/en/products/ads1114idgsr/texas-instruments" H 7750 1900 50  0001 L CNN
+F 4 "ADC" H 8450 3400 50  0001 L CNN "Description"
+F 5 "1.1" V 8050 4000 50  0001 L CNN "Height"
+F 6 "595-ADS1114IDGSR" H 8250 2200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ADS1114IDGSR?qs=IK5e5L0zOXgEXl25%2Fvy0Hg%3D%3D" H 8250 2100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 8250 2000 50  0001 L CNN "Manufacturer_Name"
+F 9 "ADS1114IDGSR" H 8250 2400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 3400
+	1    0    0    -1  
+$EndComp
+Text Label 9150 3100 2    50   ~ 0
+INT
+Wire Wire Line
+	9150 3100 8600 3100
+Wire Wire Line
+	1000 1850 1550 1850
+Text HLabel 1000 1850 0    50   Input ~ 0
+TEMP_INT
+Text Label 1550 1850 2    50   ~ 0
+INT
+$Comp
+L SamacSys_Parts_Faria:Ferrite FB?
+U 1 1 6123C538
+P 750 850
+AR Path="/60D658CE/6123C538" Ref="FB?"  Part="1" 
+AR Path="/60CF5817/6123C538" Ref="FB2"  Part="1" 
+F 0 "FB2" V 1024 400 50  0000 C CNN
+F 1 "BLM21SP601SH1D" V 933 400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 750 850 50  0001 C CNN
+F 3 "" H 750 850 50  0001 C CNN
+F 4 "BLM21SP601SH1D" H 750 850 50  0001 C CNN "Manufacturer_Part_Number"
+	1    750  850 
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

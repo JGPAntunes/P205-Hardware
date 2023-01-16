@@ -1,0 +1,63 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 10137062-00021LF
+D USB Connectors USB 3.1 RECE. CONN. Gen 1
+$ENDCMP
+#
+$CMP BGU7007,115
+D RF Amplifier WB LO-NOISE AMPLIFIER W/ BYPASS SiGe:C Low Noise Amplifier MMIC for GPS, GLONASS, Galileo and Compass
+F http://www.nxp.com/docs/en/data-sheet/BGU7007.pdf
+$ENDCMP
+#
+$CMP CONUFL001-SMD-T
+D RF Connectors / Coaxial Connectors T&R U.FL Straight Surface Mount Jack
+F https://linxtechnologies.com/wp/product/mhf-rf-connectors/
+$ENDCMP
+#
+$CMP LNA
+D BGU8009
+$ENDCMP
+#
+$CMP M40-4010246
+D Headers & Wire Housings 2P SIL SMT HORIZ SHROUDED TAB HEADER
+F https://componentsearchengine.com/Datasheets/2/M40-4010246.pdf
+$ENDCMP
+#
+$CMP M40-4010446
+D 1.00mm Pitch SIL Horizontal SMT Pin Header, tin, 4 contacts
+F https://componentsearchengine.com/Datasheets/1/M40-4010446.pdf
+$ENDCMP
+#
+$CMP NMJ4HHD2
+D Phone Connectors 1/4" MONO JACK SWTCH HALF THREAD NOSE
+F https://www.neutrik.com/en/product/nmj4hhd2
+$ENDCMP
+#
+$CMP SAW_FILTER
+D B39162B9415K610
+$ENDCMP
+#
+$CMP SR4G008
+D Antennas 1559-1609MHz Avg. Eff >75% Linear
+F https://componentsearchengine.com/Datasheets/1/SR4G008.pdf
+$ENDCMP
+#
+$CMP U.FL-R-SMT-1_10_
+D UFL SMT PCB receptable,DC-6GHz Hirose Straight 50 Surface Mount UFL Connector, Receptacle, Solder Termination Coaxial
+K
+F https://www.hirose.com/product/document?clcode=CL0331-0472-2-10&productname=U.FL-R-SMT-1(10)&series=U.FL&documenttype=2DDrawing&lang=en&documentid=0000940684
+$ENDCMP
+#
+$CMP TLF50211ELXUMA2
+D Conv DC-DC Single Step-Down Buck 4.75V to 45V 14-Pin PGSSOP EP T/R
+K
+F https://www.infineon.com/dgdl/Infineon-TLF50211EL-DS-v01_10-EN.pdf?fileId=5546d46258fc0bc1015969d2af9641e9
+$ENDCMP
+#
+$CMP HIN232IBZ
+D Dual RS-232  Transmitter/Receiver
+K
+F http://componentsearchengine.com/Datasheets/3/HIN232IBZ.pdf
+$ENDCMP
+#
+#End Doc Library

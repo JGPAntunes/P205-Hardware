@@ -1,0 +1,1265 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP1 C87
+U 1 1 60D10F5F
+P 3300 1050
+F 0 "C87" H 3415 1096 50  0000 L CNN
+F 1 "100u" H 3415 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3300 1050 50  0001 C CNN
+F 3 "~" H 3300 1050 50  0001 C CNN
+F 4 "TAJB107K006TNJ" H 3300 1050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    3300 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C86
+U 1 1 60D11AAD
+P 3700 1050
+F 0 "C86" H 3815 1096 50  0000 L CNN
+F 1 "100u" H 3815 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3700 1050 50  0001 C CNN
+F 3 "~" H 3700 1050 50  0001 C CNN
+F 4 "TAJB107K006TNJ" H 3700 1050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    3700 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C85
+U 1 1 60D11EC5
+P 4100 1050
+F 0 "C85" H 4215 1096 50  0000 L CNN
+F 1 "100u" H 4215 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 4100 1050 50  0001 C CNN
+F 3 "~" H 4100 1050 50  0001 C CNN
+F 4 "TAJB107K006TNJ" H 4100 1050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4100 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C83
+U 1 1 60D12A66
+P 4850 1050
+F 0 "C83" H 4965 1096 50  0000 L CNN
+F 1 "1u" H 4965 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4888 900 50  0001 C CNN
+F 3 "~" H 4850 1050 50  0001 C CNN
+F 4 "GRT155R61E105KE01D" H 4850 1050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4850 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 850  4850 900 
+Wire Wire Line
+	4850 850  4500 850 
+Wire Wire Line
+	4500 850  4500 900 
+Wire Wire Line
+	4500 850  4100 850 
+Wire Wire Line
+	4100 850  4100 900 
+Connection ~ 4500 850 
+Wire Wire Line
+	4100 850  3700 850 
+Wire Wire Line
+	3700 850  3700 900 
+Connection ~ 4100 850 
+Wire Wire Line
+	3700 850  3300 850 
+Wire Wire Line
+	3300 850  3300 900 
+Connection ~ 3700 850 
+Wire Wire Line
+	3700 1200 3700 1250
+Wire Wire Line
+	3300 1250 3300 1200
+Wire Wire Line
+	4500 1250 4500 1200
+Wire Wire Line
+	4850 1250 4850 1200
+$Comp
+L Device:D_TVS D?
+U 1 1 60D70283
+P 4400 3400
+AR Path="/60C5E649/60D70283" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60D70283" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60D70283" Ref="D16"  Part="1" 
+F 0 "D16" V 4400 3500 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 4500 3500 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4400 3400 50  0001 C CNN
+F 3 "~" H 4400 3400 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 4400 3400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4400 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR094
+U 1 1 60D70962
+P 4400 3650
+F 0 "#PWR094" H 4400 3400 50  0001 C CNN
+F 1 "GNDD" H 4404 3495 50  0000 C CNN
+F 2 "" H 4400 3650 50  0001 C CNN
+F 3 "" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3550 4400 3650
+Wire Wire Line
+	4400 3250 4400 3100
+Text Label 3550 5300 0    50   ~ 0
+SIM_CLK
+Text Label 3550 5400 0    50   ~ 0
+SIM_DATA
+Text Label 3550 5500 0    50   ~ 0
+SIM_RST
+Text Label 3550 5600 0    50   ~ 0
+SIM_VDD
+$Comp
+L SIM7080G:SIM7080G U8
+U 1 1 60D79D9D
+P 6550 4500
+F 0 "U8" H 6550 6367 50  0000 C CNN
+F 1 "SIM7080G" H 6550 6276 50  0000 C CNN
+F 2 "SamacSys_Parts_Jorge:XCVR_SIM7080G" H 6550 4500 50  0001 L BNN
+F 3 "" H 6550 4500 50  0001 L BNN
+F 4 "SIMCOM" H 6550 4500 50  0001 L BNN "MANUFACTURER"
+F 5 "1.04" H 6550 4500 50  0001 L BNN "PARTREV"
+F 6 "2.6 mm" H 6550 4500 50  0001 L BNN "Description"
+F 7 "Manufacturer Recommendation" H 6550 4500 50  0001 L BNN "STANDARD"
+F 8 "S2-108HB-Z308J" H 6550 4500 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 850  3300 850 
+Connection ~ 3300 850 
+Wire Wire Line
+	2550 900  2550 850 
+Wire Wire Line
+	2700 850  2550 850 
+Wire Wire Line
+	2550 1250 2550 1200
+Wire Wire Line
+	4100 1200 4100 1250
+$Comp
+L power:GNDD #PWR097
+U 1 1 60D8576A
+P 4500 1250
+F 0 "#PWR097" H 4500 1000 50  0001 C CNN
+F 1 "GNDD" H 4504 1095 50  0000 C CNN
+F 2 "" H 4500 1250 50  0001 C CNN
+F 3 "" H 4500 1250 50  0001 C CNN
+	1    4500 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR096
+U 1 1 60D85E60
+P 4850 1250
+F 0 "#PWR096" H 4850 1000 50  0001 C CNN
+F 1 "GNDD" H 4854 1095 50  0000 C CNN
+F 2 "" H 4850 1250 50  0001 C CNN
+F 3 "" H 4850 1250 50  0001 C CNN
+	1    4850 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR099
+U 1 1 60D86552
+P 3700 1250
+F 0 "#PWR099" H 3700 1000 50  0001 C CNN
+F 1 "GNDD" H 3704 1095 50  0000 C CNN
+F 2 "" H 3700 1250 50  0001 C CNN
+F 3 "" H 3700 1250 50  0001 C CNN
+	1    3700 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0100
+U 1 1 60D86C82
+P 3300 1250
+F 0 "#PWR0100" H 3300 1000 50  0001 C CNN
+F 1 "GNDD" H 3304 1095 50  0000 C CNN
+F 2 "" H 3300 1250 50  0001 C CNN
+F 3 "" H 3300 1250 50  0001 C CNN
+	1    3300 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0101
+U 1 1 60D87395
+P 2550 1250
+F 0 "#PWR0101" H 2550 1000 50  0001 C CNN
+F 1 "GNDD" H 2554 1095 50  0000 C CNN
+F 2 "" H 2550 1250 50  0001 C CNN
+F 3 "" H 2550 1250 50  0001 C CNN
+	1    2550 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 850  2250 850 
+Connection ~ 2550 850 
+Text Label 2250 850  0    50   ~ 0
+VDD
+Text Notes 8750 3050 0    50   ~ 0
+Power traces should be as wide as possible (eg. power planes)\nFerrite beed should handle up to 2A continuous\nTVS should be able to operate at 5V
+$Comp
+L power:GNDD #PWR095
+U 1 1 60D89116
+P 7600 6250
+F 0 "#PWR095" H 7600 6000 50  0001 C CNN
+F 1 "GNDD" H 7604 6095 50  0000 C CNN
+F 2 "" H 7600 6250 50  0001 C CNN
+F 3 "" H 7600 6250 50  0001 C CNN
+	1    7600 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6200 7600 6200
+Wire Wire Line
+	7600 6200 7600 6250
+$Comp
+L Device:D_TVS D?
+U 1 1 60D92D65
+P 2550 1050
+AR Path="/60C5E649/60D92D65" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60D92D65" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60D92D65" Ref="D17"  Part="1" 
+F 0 "D17" V 2550 1150 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 2650 1150 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2550 1050 50  0001 C CNN
+F 3 "~" H 2550 1050 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 2550 1050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2550 1050
+	0    -1   1    0   
+$EndComp
+NoConn ~ 5550 4600
+NoConn ~ 5550 4700
+NoConn ~ 5550 4900
+NoConn ~ 5550 5000
+NoConn ~ 7550 5600
+NoConn ~ 7550 5500
+NoConn ~ 7550 5400
+NoConn ~ 7550 5300
+NoConn ~ 5550 4000
+NoConn ~ 5550 3900
+NoConn ~ 5550 4100
+$Comp
+L Connector:TestPoint TP9
+U 1 1 60E008B6
+P 8650 4350
+F 0 "TP9" V 8604 4538 50  0000 L CNN
+F 1 "VBUS" V 8695 4538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8850 4350 50  0001 C CNN
+F 3 "~" H 8850 4350 50  0001 C CNN
+F 4 "-" H 8650 4350 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8650 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 60E08F93
+P 8650 4550
+F 0 "TP10" V 8604 4738 50  0000 L CNN
+F 1 "DM" V 8695 4738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8850 4550 50  0001 C CNN
+F 3 "~" H 8850 4550 50  0001 C CNN
+F 4 "-" H 8650 4550 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8650 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 60E09911
+P 8650 4750
+F 0 "TP11" V 8604 4938 50  0000 L CNN
+F 1 "DP" V 8695 4938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8850 4750 50  0001 C CNN
+F 3 "~" H 8850 4750 50  0001 C CNN
+F 4 "-" H 8650 4750 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8650 4750
+	0    1    1    0   
+$EndComp
+NoConn ~ 7550 4100
+NoConn ~ 7550 4200
+$Comp
+L Device:D_TVS D?
+U 1 1 60E11A8D
+P 7950 5000
+AR Path="/60C5E649/60E11A8D" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E11A8D" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E11A8D" Ref="D22"  Part="1" 
+F 0 "D22" V 7950 5100 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 8050 5100 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 7950 5000 50  0001 C CNN
+F 3 "~" H 7950 5000 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 7950 5000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7950 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60E12858
+P 8250 5000
+AR Path="/60C5E649/60E12858" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E12858" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E12858" Ref="D23"  Part="1" 
+F 0 "D23" V 8250 5100 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 8350 5100 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 8250 5000 50  0001 C CNN
+F 3 "~" H 8250 5000 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 8250 5000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8250 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60E133D7
+P 8550 5000
+AR Path="/60C5E649/60E133D7" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E133D7" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E133D7" Ref="D24"  Part="1" 
+F 0 "D24" V 8550 5100 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 8650 5100 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 8550 5000 50  0001 C CNN
+F 3 "~" H 8550 5000 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 8550 5000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8550 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR0135
+U 1 1 60E1A68D
+P 4100 1250
+F 0 "#PWR0135" H 4100 1000 50  0001 C CNN
+F 1 "GNDD" H 4104 1095 50  0000 C CNN
+F 2 "" H 4100 1250 50  0001 C CNN
+F 3 "" H 4100 1250 50  0001 C CNN
+	1    4100 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0136
+U 1 1 60E1BF74
+P 8250 5200
+F 0 "#PWR0136" H 8250 4950 50  0001 C CNN
+F 1 "GNDD" H 8254 5045 50  0000 C CNN
+F 2 "" H 8250 5200 50  0001 C CNN
+F 3 "" H 8250 5200 50  0001 C CNN
+	1    8250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0137
+U 1 1 60E1E34D
+P 8550 5200
+F 0 "#PWR0137" H 8550 4950 50  0001 C CNN
+F 1 "GNDD" H 8554 5045 50  0000 C CNN
+F 2 "" H 8550 5200 50  0001 C CNN
+F 3 "" H 8550 5200 50  0001 C CNN
+	1    8550 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5200 8550 5150
+Wire Wire Line
+	8250 5150 8250 5200
+Wire Wire Line
+	7950 5200 7950 5150
+Text Notes 9250 4500 0    50   ~ 0
+DM and DP must be 90 ohm diferencial impedance
+Text HLabel 1150 650  0    50   Input ~ 0
+VBAT
+Text HLabel 1150 900  0    50   Input ~ 0
+GNSS_ANT
+Text HLabel 1150 1000 0    50   Input ~ 0
+NBIOT_ANT
+Text HLabel 1150 1250 0    50   Input ~ 0
+SIMCARD_CLK
+Text HLabel 1150 1350 0    50   Input ~ 0
+SIMCARD_DATA
+Text HLabel 1150 1450 0    50   Input ~ 0
+SIMCARD_RST
+Text HLabel 1150 1550 0    50   Input ~ 0
+SIMCARD_VDD
+Wire Wire Line
+	1150 1450 1800 1450
+Wire Wire Line
+	1150 1350 1800 1350
+Wire Wire Line
+	1150 1250 1800 1250
+$Comp
+L Device:D_TVS D?
+U 1 1 60E51C84
+P 4350 5800
+AR Path="/60C5E649/60E51C84" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E51C84" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E51C84" Ref="D18"  Part="1" 
+F 0 "D18" V 4350 5900 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 4450 5900 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4350 5800 50  0001 C CNN
+F 3 "~" H 4350 5800 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 4350 5800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4350 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60E554E5
+P 4650 5800
+AR Path="/60C5E649/60E554E5" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E554E5" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E554E5" Ref="D19"  Part="1" 
+F 0 "D19" V 4650 5900 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 4750 5900 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4650 5800 50  0001 C CNN
+F 3 "~" H 4650 5800 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 4650 5800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4650 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60E577F3
+P 4950 5800
+AR Path="/60C5E649/60E577F3" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E577F3" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E577F3" Ref="D20"  Part="1" 
+F 0 "D20" V 4950 5900 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 5050 5900 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4950 5800 50  0001 C CNN
+F 3 "~" H 4950 5800 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 4950 5800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4950 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60E5899D
+P 5250 5800
+AR Path="/60C5E649/60E5899D" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60E5899D" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60E5899D" Ref="D21"  Part="1" 
+F 0 "D21" V 5250 5900 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 5350 5900 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 5250 5800 50  0001 C CNN
+F 3 "~" H 5250 5800 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 5250 5800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5250 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5600 4350 5650
+Wire Wire Line
+	3550 5600 3950 5600
+Wire Wire Line
+	4650 5650 4650 5500
+Wire Wire Line
+	4950 5400 4950 5650
+Wire Wire Line
+	5250 5300 5250 5650
+Wire Wire Line
+	5550 5600 4350 5600
+Wire Wire Line
+	4650 5500 5550 5500
+Wire Wire Line
+	5550 5400 4950 5400
+Wire Wire Line
+	5250 5300 5550 5300
+$Comp
+L power:GNDD #PWR0138
+U 1 1 60E1B2AA
+P 7950 5200
+F 0 "#PWR0138" H 7950 4950 50  0001 C CNN
+F 1 "GNDD" H 7954 5045 50  0000 C CNN
+F 2 "" H 7950 5200 50  0001 C CNN
+F 3 "" H 7950 5200 50  0001 C CNN
+	1    7950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0139
+U 1 1 60E6EBE7
+P 4350 6000
+F 0 "#PWR0139" H 4350 5750 50  0001 C CNN
+F 1 "GNDD" H 4354 5845 50  0000 C CNN
+F 2 "" H 4350 6000 50  0001 C CNN
+F 3 "" H 4350 6000 50  0001 C CNN
+	1    4350 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0140
+U 1 1 60E7005D
+P 4650 6000
+F 0 "#PWR0140" H 4650 5750 50  0001 C CNN
+F 1 "GNDD" H 4654 5845 50  0000 C CNN
+F 2 "" H 4650 6000 50  0001 C CNN
+F 3 "" H 4650 6000 50  0001 C CNN
+	1    4650 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0141
+U 1 1 60E7152E
+P 4950 6000
+F 0 "#PWR0141" H 4950 5750 50  0001 C CNN
+F 1 "GNDD" H 4954 5845 50  0000 C CNN
+F 2 "" H 4950 6000 50  0001 C CNN
+F 3 "" H 4950 6000 50  0001 C CNN
+	1    4950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0142
+U 1 1 60E72A38
+P 5250 6000
+F 0 "#PWR0142" H 5250 5750 50  0001 C CNN
+F 1 "GNDD" H 5254 5845 50  0000 C CNN
+F 2 "" H 5250 6000 50  0001 C CNN
+F 3 "" H 5250 6000 50  0001 C CNN
+	1    5250 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6000 5250 5950
+Wire Wire Line
+	4950 5950 4950 6000
+Wire Wire Line
+	4650 6000 4650 5950
+Wire Wire Line
+	4350 5950 4350 6000
+$Comp
+L SamacSys_Parts_Jorge:NXB0108 U?
+U 1 1 60E7D92D
+P 1650 3650
+AR Path="/60E7D92D" Ref="U?"  Part="1" 
+AR Path="/60D658CE/60E7D92D" Ref="U13"  Part="1" 
+F 0 "U13" H 1650 2327 50  0000 C CNN
+F 1 "NXB0108" H 1650 2236 50  0000 C CNN
+F 2 "Package_DFN_QFN:WQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x2.9mm" H 1650 3550 50  0001 C CNN
+F 3 "" H 1650 3550 50  0001 C CNN
+F 4 "NXB0108BQ-Q100X" H 1650 3650 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1650 3650
+	-1   0    0    -1  
+$EndComp
+Text Label 2700 4500 2    50   ~ 0
+SIMCOM_TX
+Text Label 2700 4400 2    50   ~ 0
+SIMCOM_RX
+Text Label 2700 4300 2    50   ~ 0
+SIMCOM_RTS
+Text Label 2700 4200 2    50   ~ 0
+SIMCOM_CTS
+Text Label 600  4500 0    50   ~ 0
+UART_TX
+Text Label 600  4400 0    50   ~ 0
+UART_RX
+Text Label 600  4300 0    50   ~ 0
+UART_RTS
+Text Label 600  4200 0    50   ~ 0
+UART_CTS
+Text Label 1800 2000 2    50   ~ 0
+UART_TX
+Text Label 1800 1900 2    50   ~ 0
+UART_RX
+Text Label 1800 1800 2    50   ~ 0
+UART_RTS
+Text Label 1800 1700 2    50   ~ 0
+UART_CTS
+Text HLabel 1150 1700 0    50   Input ~ 0
+UART_CTS
+Text HLabel 1150 1800 0    50   Input ~ 0
+UART_RTS
+Text HLabel 1150 1900 0    50   Input ~ 0
+UART_RX
+Text HLabel 1150 2000 0    50   Input ~ 0
+UART_TX
+Wire Wire Line
+	1150 1700 1800 1700
+Wire Wire Line
+	1150 1800 1800 1800
+Wire Wire Line
+	1150 1900 1800 1900
+Wire Wire Line
+	1150 2000 1800 2000
+Wire Wire Line
+	1150 1550 1800 1550
+Text Label 1800 1250 2    50   ~ 0
+SIM_CLK
+Text Label 1800 1350 2    50   ~ 0
+SIM_DATA
+Text Label 1800 1450 2    50   ~ 0
+SIM_RST
+Text Label 1800 1550 2    50   ~ 0
+SIM_VDD
+$Comp
+L Device:C C84
+U 1 1 60D1217E
+P 4500 1050
+F 0 "C84" H 4615 1096 50  0000 L CNN
+F 1 "100n" H 4615 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 900 50  0001 C CNN
+F 3 "~" H 4500 1050 50  0001 C CNN
+F 4 "GCM155R71H104KE02D" H 4500 1050 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4500 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60EB6661
+P 3950 5800
+F 0 "C1" H 4065 5846 50  0000 L CNN
+F 1 "100n" H 4065 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3988 5650 50  0001 C CNN
+F 3 "~" H 3950 5800 50  0001 C CNN
+F 4 "GCM155R71H104KE02D" H 3950 5800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    3950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5650 3950 5600
+Connection ~ 3950 5600
+Wire Wire Line
+	3950 5600 4350 5600
+Connection ~ 4350 5600
+Wire Wire Line
+	3550 5500 4650 5500
+Connection ~ 4650 5500
+Wire Wire Line
+	3550 5400 4950 5400
+Connection ~ 4950 5400
+Wire Wire Line
+	3550 5300 5250 5300
+Connection ~ 5250 5300
+$Comp
+L power:GNDD #PWR0143
+U 1 1 60EC6F1D
+P 3950 6000
+F 0 "#PWR0143" H 3950 5750 50  0001 C CNN
+F 1 "GNDD" H 3954 5845 50  0000 C CNN
+F 2 "" H 3950 6000 50  0001 C CNN
+F 3 "" H 3950 6000 50  0001 C CNN
+	1    3950 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5950 3950 6000
+Text Label 8300 3100 2    50   ~ 0
+VDD_EXT
+Wire Wire Line
+	1800 3700 1800 3250
+Text Label 1800 3250 3    50   ~ 0
+VDD_EXT
+Wire Wire Line
+	1500 3700 1500 3250
+Text Label 1500 3250 3    50   ~ 0
+DVDD
+Text Label 2600 4750 2    50   ~ 0
+LVL_OE
+Text Label 1800 2150 2    50   ~ 0
+LVL_OE
+Wire Wire Line
+	1150 2150 1800 2150
+Text HLabel 1150 2150 0    50   Input ~ 0
+UART_EN
+$Comp
+L power:GNDD #PWR0144
+U 1 1 60EE0695
+P 1100 4900
+F 0 "#PWR0144" H 1100 4650 50  0001 C CNN
+F 1 "GNDD" H 1104 4745 50  0000 C CNN
+F 2 "" H 1100 4900 50  0001 C CNN
+F 3 "" H 1100 4900 50  0001 C CNN
+	1    1100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4750 1100 4750
+Connection ~ 2200 4000
+Wire Wire Line
+	2200 3900 2150 3900
+Wire Wire Line
+	2200 4000 2200 3900
+Wire Wire Line
+	2200 4000 2150 4000
+Wire Wire Line
+	2200 4100 2200 4000
+Wire Wire Line
+	2150 4100 2200 4100
+$Comp
+L power:GNDD #PWR0145
+U 1 1 60EF3B24
+P 2200 4900
+F 0 "#PWR0145" H 2200 4650 50  0001 C CNN
+F 1 "GNDD" H 2204 4745 50  0000 C CNN
+F 2 "" H 2200 4900 50  0001 C CNN
+F 3 "" H 2200 4900 50  0001 C CNN
+	1    2200 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4750 2600 4750
+Wire Wire Line
+	1100 4750 1100 4900
+NoConn ~ 7550 4800
+NoConn ~ 7550 4900
+NoConn ~ 7550 5000
+NoConn ~ 7550 5100
+Text Label 1800 650  2    50   ~ 0
+VDD
+Wire Wire Line
+	1150 650  1800 650 
+Text Label 4850 850  2    50   ~ 0
+SIMCOM_VDD
+Text Label 8300 2900 2    50   ~ 0
+SIMCOM_VDD
+Wire Wire Line
+	7550 3100 8300 3100
+Wire Wire Line
+	7550 2900 8300 2900
+NoConn ~ 5550 3600
+NoConn ~ 7550 3800
+NoConn ~ 7550 3900
+Text Label 4950 3500 0    50   ~ 0
+USB_BOOT
+Text Label 1050 5550 0    50   ~ 0
+USB_BOOT
+Wire Wire Line
+	1500 5350 1050 5350
+Text Label 1050 5350 0    50   ~ 0
+VDD_EXT
+$Comp
+L Device:R R72
+U 1 1 60FD3C9B
+P 1650 5350
+F 0 "R72" V 1550 5350 50  0000 C CNN
+F 1 "10k" V 1650 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1580 5350 50  0001 C CNN
+F 3 "~" H 1650 5350 50  0001 C CNN
+F 4 "RC0402JR-7W10KL" H 1650 5350 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1650 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 60FDF4A0
+P 1950 5350
+F 0 "TP5" V 1904 5538 50  0000 L CNN
+F 1 "USB_BOOT" V 1995 5538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2150 5350 50  0001 C CNN
+F 3 "~" H 2150 5350 50  0001 C CNN
+F 4 "-" H 1950 5350 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1950 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 60FEF04D
+P 1950 5550
+F 0 "TP6" V 1904 5738 50  0000 L CNN
+F 1 "USB_BOOT" V 1995 5738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2150 5550 50  0001 C CNN
+F 3 "~" H 2150 5550 50  0001 C CNN
+F 4 "-" H 1950 5550 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1950 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60FFB78F
+P 1500 5750
+AR Path="/60C5E649/60FFB78F" Ref="D?"  Part="1" 
+AR Path="/60D0D342/60FFB78F" Ref="D?"  Part="1" 
+AR Path="/60D658CE/60FFB78F" Ref="D1"  Part="1" 
+F 0 "D1" V 1500 5850 50  0000 L CNN
+F 1 "DESD5V0U1BA-7" V 1600 5850 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 1500 5750 50  0001 C CNN
+F 3 "~" H 1500 5750 50  0001 C CNN
+F 4 "DESD5V0U1BA-7" H 1500 5750 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1500 5750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1500 5600 1500 5550
+Wire Wire Line
+	1500 5550 1050 5550
+$Comp
+L power:GNDD #PWR0146
+U 1 1 61003A98
+P 1500 5950
+F 0 "#PWR0146" H 1500 5700 50  0001 C CNN
+F 1 "GNDD" H 1504 5795 50  0000 C CNN
+F 2 "" H 1500 5950 50  0001 C CNN
+F 3 "" H 1500 5950 50  0001 C CNN
+	1    1500 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5900 1500 5950
+Connection ~ 1500 5550
+Wire Wire Line
+	1800 5350 1950 5350
+Wire Wire Line
+	1500 5550 1950 5550
+$Comp
+L Device:C C3
+U 1 1 61073D4A
+P 8900 3800
+F 0 "C3" H 9015 3846 50  0000 L CNN
+F 1 "TUNE" H 9015 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8938 3650 50  0001 C CNN
+F 3 "~" H 8900 3800 50  0001 C CNN
+	1    8900 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C88
+U 1 1 6107CDDA
+P 9600 3800
+F 0 "C88" H 9715 3846 50  0000 L CNN
+F 1 "TUNE" H 9715 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9638 3650 50  0001 C CNN
+F 3 "~" H 9600 3800 50  0001 C CNN
+	1    9600 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3650 8900 3600
+Wire Wire Line
+	9100 3600 8900 3600
+Wire Wire Line
+	9400 3600 9600 3600
+Wire Wire Line
+	9600 3650 9600 3600
+Connection ~ 9600 3600
+$Comp
+L power:GNDD #PWR0147
+U 1 1 610BA9B9
+P 8900 4000
+F 0 "#PWR0147" H 8900 3750 50  0001 C CNN
+F 1 "GNDD" H 8904 3845 50  0000 C CNN
+F 2 "" H 8900 4000 50  0001 C CNN
+F 3 "" H 8900 4000 50  0001 C CNN
+	1    8900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0148
+U 1 1 610C5877
+P 9600 4000
+F 0 "#PWR0148" H 9600 3750 50  0001 C CNN
+F 1 "GNDD" H 9604 3845 50  0000 C CNN
+F 2 "" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3950 9600 4000
+Wire Wire Line
+	8900 3950 8900 4000
+Text Notes 7750 3600 0    50   ~ 0
+50 ohm transmission line
+Text Label 10250 3600 2    50   ~ 0
+MAIN_ANT
+Text Label 4950 3300 0    50   ~ 0
+SIMCOM_GNSS
+Text Label 10450 1400 2    50   ~ 0
+SIMCOM_GNSS
+Text Notes 7050 7050 0    50   ~ 0
+GNSS:\nSR4G008 - Ultra flat 7x5.8x0.4, can be used on the board edge, only L1/G1/E1/B1, SMD\nB39162B9415K610 - GNSS filter\nBGU8009,115 - LNA\n\nNBIOT:\n
+Wire Wire Line
+	9600 3600 10250 3600
+$Comp
+L Device:L L3
+U 1 1 60DAD0AF
+P 6750 1650
+F 0 "L3" H 6802 1696 50  0000 L CNN
+F 1 "TUNE" H 6802 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6750 1650 50  0001 C CNN
+F 3 "~" H 6750 1650 50  0001 C CNN
+	1    6750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60DADDCB
+P 7100 1400
+F 0 "C2" H 7215 1446 50  0000 L CNN
+F 1 "TUNE" H 7215 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7138 1250 50  0001 C CNN
+F 3 "~" H 7100 1400 50  0001 C CNN
+	1    7100 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 60DB2957
+P 7400 1650
+F 0 "L4" H 7452 1696 50  0000 L CNN
+F 1 "TUNE" H 7452 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7400 1650 50  0001 C CNN
+F 3 "~" H 7400 1650 50  0001 C CNN
+	1    7400 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4600 8550 4600
+Wire Wire Line
+	8550 4600 8550 4750
+Wire Wire Line
+	8650 4750 8550 4750
+Connection ~ 8550 4750
+Wire Wire Line
+	8550 4750 8550 4850
+Wire Wire Line
+	7550 4500 8250 4500
+Wire Wire Line
+	7550 4400 7950 4400
+Wire Wire Line
+	7950 4400 7950 4850
+Connection ~ 7950 4400
+Wire Wire Line
+	8250 4500 8250 4850
+Wire Wire Line
+	8650 4350 8600 4350
+Wire Wire Line
+	8250 4500 8600 4500
+Wire Wire Line
+	8600 4500 8600 4550
+Wire Wire Line
+	8600 4550 8650 4550
+Connection ~ 8250 4500
+Wire Wire Line
+	8600 4400 8600 4350
+Wire Wire Line
+	7950 4400 8600 4400
+Wire Wire Line
+	8900 3600 7550 3600
+Connection ~ 8900 3600
+Wire Wire Line
+	4950 3300 5550 3300
+Wire Wire Line
+	4950 3500 5550 3500
+Wire Wire Line
+	4950 3800 5550 3800
+Wire Wire Line
+	4950 4200 5550 4200
+Wire Wire Line
+	4950 4300 5550 4300
+Wire Wire Line
+	4950 4400 5550 4400
+Wire Wire Line
+	1150 900  1800 900 
+Text Label 1800 900  2    50   ~ 0
+GNSS_ANT
+$Comp
+L SamacSys_Parts_Jorge:LNA U?
+U 1 1 60EAEAD2
+P 8250 800
+AR Path="/60EAEAD2" Ref="U?"  Part="1" 
+AR Path="/60D658CE/60EAEAD2" Ref="U10"  Part="1" 
+F 0 "U10" H 8450 450 50  0000 L CNN
+F 1 "LNA" H 8450 350 50  0000 L CNN
+F 2 "SamacSys_Parts_Jorge:BGU7007115" H 8450 500 50  0001 C CNN
+F 3 "" H 8450 500 50  0001 C CNN
+F 4 "BGU8009,115" H 8250 800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8250 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1400 6750 1400
+Text Label 6300 1400 0    50   ~ 0
+GNSS_ANT
+Wire Wire Line
+	6750 1500 6750 1400
+Connection ~ 6750 1400
+Wire Wire Line
+	6750 1400 6300 1400
+Wire Wire Line
+	7250 1400 7400 1400
+Wire Wire Line
+	7400 1400 7400 1500
+$Comp
+L power:GNDD #PWR0149
+U 1 1 60EF11A3
+P 6750 1850
+F 0 "#PWR0149" H 6750 1600 50  0001 C CNN
+F 1 "GNDD" H 6754 1695 50  0000 C CNN
+F 2 "" H 6750 1850 50  0001 C CNN
+F 3 "" H 6750 1850 50  0001 C CNN
+	1    6750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0150
+U 1 1 60EF61F1
+P 7400 1850
+F 0 "#PWR0150" H 7400 1600 50  0001 C CNN
+F 1 "GNDD" H 7404 1695 50  0000 C CNN
+F 2 "" H 7400 1850 50  0001 C CNN
+F 3 "" H 7400 1850 50  0001 C CNN
+	1    7400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1800 7400 1850
+Wire Wire Line
+	6750 1800 6750 1850
+Connection ~ 7400 1400
+$Comp
+L SamacSys_Parts_Jorge:SAW_FILTER U?
+U 1 1 60F25737
+P 9400 1100
+AR Path="/60F25737" Ref="U?"  Part="1" 
+AR Path="/60D658CE/60F25737" Ref="U15"  Part="1" 
+F 0 "U15" H 9400 1115 50  0000 C CNN
+F 1 "B39162B9415K610 " H 9400 1024 50  0000 C CNN
+F 2 "SamacSys_Parts_Jorge:B39162B9415K610" H 9400 1100 50  0001 C CNN
+F 3 "" H 9400 1100 50  0001 C CNN
+F 4 "B39162B9415K610" H 9400 1100 50  0001 C CNN "Manufacturer_Part_Number"
+	1    9400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1400 8950 1400
+$Comp
+L power:GNDD #PWR0151
+U 1 1 60F46046
+P 9250 1850
+F 0 "#PWR0151" H 9250 1600 50  0001 C CNN
+F 1 "GNDD" H 9254 1695 50  0000 C CNN
+F 2 "" H 9250 1850 50  0001 C CNN
+F 3 "" H 9250 1850 50  0001 C CNN
+	1    9250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0152
+U 1 1 60F4B428
+P 9400 2000
+F 0 "#PWR0152" H 9400 1750 50  0001 C CNN
+F 1 "GNDD" H 9404 1845 50  0000 C CNN
+F 2 "" H 9400 2000 50  0001 C CNN
+F 3 "" H 9400 2000 50  0001 C CNN
+	1    9400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0153
+U 1 1 60F5062F
+P 9550 1850
+F 0 "#PWR0153" H 9550 1600 50  0001 C CNN
+F 1 "GNDD" H 9554 1695 50  0000 C CNN
+F 2 "" H 9550 1850 50  0001 C CNN
+F 3 "" H 9550 1850 50  0001 C CNN
+	1    9550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1800 9400 2000
+Wire Wire Line
+	9550 1800 9550 1850
+Wire Wire Line
+	9250 1800 9250 1850
+Text Label 1800 2250 2    50   ~ 0
+LNA_EN
+Wire Wire Line
+	1150 2250 1800 2250
+Text HLabel 1150 2250 0    50   Input ~ 0
+GPS_EN
+Wire Wire Line
+	8050 1800 8050 2200
+Text Label 8050 2200 1    50   ~ 0
+LNA_EN
+Text Label 8150 650  3    50   ~ 0
+DVDD
+Wire Wire Line
+	8150 650  8150 1050
+$Comp
+L power:GNDD #PWR0154
+U 1 1 60F9212D
+P 8250 1800
+F 0 "#PWR0154" H 8250 1550 50  0001 C CNN
+F 1 "GNDD" H 8254 1645 50  0000 C CNN
+F 2 "" H 8250 1800 50  0001 C CNN
+F 3 "" H 8250 1800 50  0001 C CNN
+	1    8250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 1400 9850 1400
+$Comp
+L Connector:TestPoint TP8
+U 1 1 61009EFC
+P 8200 3400
+F 0 "TP8" V 8154 3588 50  0000 L CNN
+F 1 "STATUS" V 8245 3588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8400 3400 50  0001 C CNN
+F 3 "~" H 8400 3400 50  0001 C CNN
+F 4 "-" H 8200 3400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8200 3400
+	0    1    1    0   
+$EndComp
+NoConn ~ 7550 5800
+NoConn ~ 7550 5900
+NoConn ~ 7550 6000
+Wire Wire Line
+	1150 1000 1800 1000
+Text Label 1800 1000 2    50   ~ 0
+MAIN_ANT
+$Comp
+L Device:L L5
+U 1 1 610516F6
+P 9250 3600
+F 0 "L5" V 9440 3600 50  0000 C CNN
+F 1 "TUNE" V 9349 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9250 3600 50  0001 C CNN
+F 3 "~" H 9250 3600 50  0001 C CNN
+	1    9250 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 1400 7850 1400
+$Comp
+L Connector:TestPoint TP7
+U 1 1 6106A3FD
+P 8200 3200
+F 0 "TP7" V 8154 3388 50  0000 L CNN
+F 1 "NETWORK" V 8245 3388 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8400 3200 50  0001 C CNN
+F 3 "~" H 8400 3200 50  0001 C CNN
+F 4 "-" H 8200 3200 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8200 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 3400 8200 3400
+Wire Wire Line
+	8200 3200 8150 3200
+Wire Wire Line
+	8150 3200 8150 3300
+Wire Wire Line
+	7550 3300 8150 3300
+Text Label 1800 2350 2    50   ~ 0
+PWR_KEY
+Text HLabel 1150 2350 0    50   Input ~ 0
+PWR_KEY
+Wire Wire Line
+	1150 2350 1800 2350
+Text Label 600  4600 0    50   ~ 0
+PWR_KEY
+Connection ~ 4400 3100
+Wire Wire Line
+	4400 3100 5550 3100
+Wire Wire Line
+	3500 3100 4400 3100
+Text HLabel 1150 750  0    50   Input ~ 0
+DVDD
+Text Label 1800 750  2    50   ~ 0
+DVDD
+Wire Wire Line
+	1150 750  1800 750 
+Wire Wire Line
+	4100 800  4100 850 
+$Comp
+L Connector:TestPoint TP?
+U 1 1 63E8E09D
+P 4100 800
+AR Path="/60C5E649/63E8E09D" Ref="TP?"  Part="1" 
+AR Path="/60D658CE/63E8E09D" Ref="TP20"  Part="1" 
+F 0 "TP20" H 4158 918 50  0000 L CNN
+F 1 "SIM_VDD" H 4158 827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4300 800 50  0001 C CNN
+F 3 "~" H 4300 800 50  0001 C CNN
+F 4 "-" H 4100 800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4100 800 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5550 5800
+NoConn ~ 5550 5900
+Text Label 4950 4300 0    50   ~ 0
+SIMCOM_TX
+Text Label 4950 4400 0    50   ~ 0
+SIMCOM_RX
+Text Label 4950 4200 0    50   ~ 0
+SIMCOM_RTS
+Text Label 4950 3800 0    50   ~ 0
+SIMCOM_CTS
+Wire Wire Line
+	8250 1800 8250 1750
+Wire Wire Line
+	8350 1650 8350 1750
+Wire Wire Line
+	8350 1750 8250 1750
+Connection ~ 8250 1750
+Wire Wire Line
+	8250 1750 8250 1700
+Wire Wire Line
+	2150 4400 2700 4400
+Wire Wire Line
+	600  4600 1150 4600
+Wire Wire Line
+	600  4200 1150 4200
+Wire Wire Line
+	600  4300 1150 4300
+Wire Wire Line
+	600  4500 1150 4500
+Wire Wire Line
+	600  4400 1150 4400
+Wire Wire Line
+	2150 4500 2700 4500
+Wire Wire Line
+	2150 4300 2700 4300
+Wire Wire Line
+	2150 4200 2700 4200
+Wire Wire Line
+	2200 4100 2200 4900
+Connection ~ 2200 4100
+Wire Wire Line
+	2150 4600 3500 4600
+Wire Wire Line
+	3500 3100 3500 4600
+Wire Wire Line
+	1150 3900 1100 3900
+Wire Wire Line
+	1100 3900 1100 4000
+Connection ~ 1100 4750
+Wire Wire Line
+	1150 4100 1100 4100
+Connection ~ 1100 4100
+Wire Wire Line
+	1100 4100 1100 4750
+Wire Wire Line
+	1150 4000 1100 4000
+Connection ~ 1100 4000
+Wire Wire Line
+	1100 4000 1100 4100
+$Comp
+L SamacSys_Parts_Faria:Ferrite FB1
+U 1 1 61221AB2
+P 2400 850
+F 0 "FB1" V 2674 400 50  0000 C CNN
+F 1 "BLM21SP601SH1D" V 2583 400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2400 850 50  0001 C CNN
+F 3 "" H 2400 850 50  0001 C CNN
+F 4 "BLM21SP601SH1D" H 2400 850 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2400 850 
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

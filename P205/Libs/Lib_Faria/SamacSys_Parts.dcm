@@ -1,0 +1,61 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 23K640-I_ST
+D Microchip Technology SRAM, 23K640-I/ST- 64kbit
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22126E.pdf
+$ENDCMP
+#
+$CMP ADS1114IDGSR
+D ADC
+F https://www.arrow.com/en/products/ads1114idgsr/texas-instruments
+$ENDCMP
+#
+$CMP ADS129xRIZXGT
+D 6-Channel, 24-Bit Analog-To-Digital Converter w/Integrated Respiration Impedance and ECG Front End
+F http://www.ti.com/lit/gpn/ads1296r
+$ENDCMP
+#
+$CMP BQ25300RTER
+D Battery Management Standalone 1-cell, 17-V, 3.0-A battery charger 16-WQFN -40 to 85
+F https://www.ti.com/lit/ds/symlink/bq25300.pdf?ts=1623424163690&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DBQ25300RTER
+$ENDCMP
+#
+$CMP BQ51050BRHLR
+D Qi (WPC) Compliant Highly Integrated Secondary-Side Direct Lithium Ion Charger.
+F http://www.ti.com/lit/gpn/bq51050b
+$ENDCMP
+#
+$CMP DMG2305UX-7
+D MOSFET P-Ch 20V 5A Enhancement SOT23 Diodes Inc DMG2305UX-7 P-channel MOSFET Transistor, -3.3 A, -20 V, 3-Pin SOT-23
+F https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf
+$ENDCMP
+#
+$CMP ECS-.327-12.5-12R-TR
+D Crystals 32.768kHz 12.5pF -40C +85C
+F https://www.ecsxtal.com/store/pdf/ECX-12R.pdf
+$ENDCMP
+#
+$CMP ECS-320-8-37B-7KM-TR
+D Crystals 32MHz 8pf 50 ohms -20C to 70C 7ppm
+$ENDCMP
+#
+$CMP MEM2061-01-188-00-A
+D MEM2061 Series 8 Position 1.1 mm Pitch Push-Push MicroSD SMT Memory Card Connector
+F https://gct.co/files/drawings/mem2061.pdf?v=db251ddb-1946-4f24-aa19-b8a17901bdd2
+$ENDCMP
+#
+$CMP PESD5V0U5BV,115
+D PESD5V0U5BF; PESD5V0U5BV - Ultra low capacitance bidirectional fivefold ESD protection arrays
+F https://assets.nexperia.com/documents/data-sheet/PESD5V0U5BF_PESD5V0U5BV.pdf
+$ENDCMP
+#
+$CMP SKRHACE010
+F https://www.alps.com/prod/info/E/HTML/MultiControl/Switch/SKRH/SKRHACE010.html
+$ENDCMP
+#
+$CMP SN74HCS00QPWRQ1
+D Logic Gates
+F https://www.ti.com/lit/gpn/SN74HCS00-Q1
+$ENDCMP
+#
+#End Doc Library

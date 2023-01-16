@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-04022015-104147";"";
+"REFERENCE";"SKRHABE010";"";
+"TraceParts.PartTitle";"Switch,4 directional,center push tact,PC";"";
+"TraceParts.InstanceId";"10-04022015-104147EVKMLYHQFYGJWJNL7ALQGC87I";"";
+"DESIGN";"Switch,4 directional,center push tact,PC";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"ALPS";"";
+"TraceParts.PartVersion";"1.0.4";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"ALPS:10-04022015-104147";"";
